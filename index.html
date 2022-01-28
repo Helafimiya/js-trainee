@@ -5,34 +5,40 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.css" />
     <title>ToDoList</title>
   </head>
   <body>
-    <main class="structure">
-      <div class="structure__list">
-        <h1 class="structure__title">Список овощей на суп</h1>
-        <div class="structure__grid">
-          <label class="structure__grid-item"
-            ><input type="checkbox" />Морковь</label
-          >
-          <label class="structure__grid-item"
-            ><input type="checkbox" />Лук</label
-          >
-          <label class="structure__grid-item"
-            ><input type="checkbox" />Капуста</label
-          >
-          <label class="structure__grid-item"
-            ><input type="checkbox" />Свекла</label
-          >
-          <label class="structure__grid-item"
-            ><input type="checkbox" />Томат</label
-          >
-        </div>
-        <div>
-          <input type="text" placeholder="Напиши в меня что-нибудь" autofocus />
-          <button type="button">Добавить</button>
-        </div>
+    <main>
+      <div class="todo">
+        <h1 class="todo__title">Список овощей на суп</h1>
+        <ul class="todo__list">
+          <li class="todo__item">
+            <label><input type="checkbox" />Морковь</label>
+          </li>
+          <li class="todo__item">
+            <label><input type="checkbox" />Лук</label>
+          </li>
+          <li class="todo__item">
+            <label><input type="checkbox" />Капуста</label>
+          </li>
+          <li class="todo__item">
+            <label><input type="checkbox" />Свекла</label>
+          </li>
+          <li class="todo__item">
+            <label><input type="checkbox" />Томат</label>
+          </li>
+        </ul>
+        <!-- <div class="todo__new-element">
+          <input
+            class=""
+            type="text"
+            placeholder="Напиши в меня что-нибудь"
+            autofocus
+          />
+          <button class="" type="button">Добавить</button>
+        </div> -->
       </div>
     </main>
   </body>

@@ -1,34 +1,34 @@
 body {
   box-sizing: border-box;
   width: 300px;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-size: 14px;
+  color: #fff;
+}
+
+.todo {
+  border: 4px solid #15b422;
   background-color: #ecfcc1;
 }
 
-.structure__list {
-  border: 4px solid #15b422;
-}
-
-.structure__title {
+.todo__title {
   margin: 0;
   padding: 20px;
-  font-family: "Segoe UI", Tahoma, sans-serif;
   font-size: 20px;
-  color: #fff;
   background-color: #15b422;
 }
 
-.structure__grid {
-  display: grid;
-  margin-top: 10px;
-  text-align: center;
+.todo__list {
+  list-style: none;
+  color: #000;
 }
 
-.structure__grid-item {
+.todo__item {
   margin-bottom: 10px;
   padding-bottom: 10px;
   border-bottom: 4px dotted #a5f87e;
 }
 
-.structure__grid-item:last-child {
+.todo__grid-item:last-child {
   margin: 0;
 }
