@@ -1,26 +1,34 @@
-.structure__list {
+body {
   box-sizing: border-box;
   width: 300px;
   background-color: #ecfcc1;
+}
+
+.structure__list {
   border: 4px solid #15b422;
 }
 
 .structure__title {
+  margin: 0;
   padding: 20px;
-  margin-top: 0;
   font-family: "Segoe UI", Tahoma, sans-serif;
   font-size: 20px;
   color: #fff;
   background-color: #15b422;
 }
 
-.structure__data {
+.structure__grid {
   display: grid;
+  margin-top: 10px;
   text-align: center;
 }
 
-.structure__data-item {
+.structure__grid-item {
   margin-bottom: 10px;
   padding-bottom: 10px;
   border-bottom: 4px dotted #a5f87e;
+}
+
+.structure__grid-item:last-child {
+  margin: 0;
 }
