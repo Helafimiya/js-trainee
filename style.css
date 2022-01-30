@@ -19,7 +19,9 @@ body {
 }
 
 .todo__list {
+  padding: 0;
   list-style: none;
+  text-align: center;
   color: #000;
 }
 
