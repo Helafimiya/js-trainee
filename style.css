@@ -6,6 +6,11 @@ body {
   color: #fff;
 }
 
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .todo {
   border: 4px solid #15b422;
   background-color: #ecfcc1;
@@ -21,16 +26,17 @@ body {
 .todo__list {
   padding: 0;
   list-style: none;
-  text-align: center;
   color: #000;
 }
 
 .todo__item {
+  display: flex;
   margin-bottom: 10px;
   padding-bottom: 10px;
+  justify-content: space-between;
   border-bottom: 4px dotted #a5f87e;
 }
 
-.todo__grid-item:last-child {
-  margin: 0;
+.todo__item:last-child {
+  margin-bottom: 0;
 }
