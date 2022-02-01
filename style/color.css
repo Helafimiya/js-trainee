@@ -1,15 +1,6 @@
 :root {
   --dark-green-color: #0ba832;
-}
-
-body {
-  --black: #000;
-}
-
-.title {
-  --white-color: #fff;
-}
-
-.todo__item {
-  --light-green: #a5f87e;
+  --white-background-title-color: #fff;
+  --black-main-text: #000;
+  --light-border-green: #a5f87e;
 }
