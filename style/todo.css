@@ -1,0 +1,28 @@
+.todo {
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 4px solid var(--dark-green-color);
+}
+
+.todo__list {
+  padding: 0;
+  list-style: none;
+}
+
+.todo__item {
+  display: flex;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  justify-content: space-between;
+  border-bottom: 4px dotted var(--light-green);
+}
+
+.todo__item:last-child {
+  margin-bottom: 0;
+}
+
+.todo__name {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
