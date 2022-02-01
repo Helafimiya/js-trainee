@@ -6,10 +6,10 @@ body {
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
-  color: var(--black-main-text);
+  color: var(--main-text);
   text-decoration: none;
 
-  background-color: var(--white-background-title-color);
+  background-color: var(--back-text-title);
 
   overflow-x: hidden;
   box-sizing: border-box;

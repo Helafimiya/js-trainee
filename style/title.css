@@ -2,6 +2,6 @@
   margin: 0;
   padding: 20px;
   font-size: 20px;
-  background-color: var(--dark-green-color);
-  color: var(--white-background-title-color);
+  background-color: var(--back-title-border);
+  color: var(--back-text-title);
 }

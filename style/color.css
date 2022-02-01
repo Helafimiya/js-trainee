@@ -1,6 +1,6 @@
 :root {
-  --dark-green-color: #0ba832;
-  --white-background-title-color: #fff;
-  --black-main-text: #000;
-  --light-border-green: #a5f87e;
+  --back-title-border: #0ba832;
+  --back-text-title: #fff;
+  --main-text: #000;
+  --border-list: #a5f87e;
 }
