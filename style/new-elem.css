@@ -1,0 +1,22 @@
+.new-elem {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.new-elem__stroke {
+  width: 50%;
+}
+
+.new-elem__stroke:active {
+  border: 3px var(--back-title-border);
+}
+
+.new-elem__btn {
+  width: 100px;
+  appearance: none;
+  border: 0;
+  border-radius: 5px;
+  background: var(--back-title-border);
+  color: var(--back-text-title);
+  cursor: pointer;
+}
