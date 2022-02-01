@@ -11,9 +11,14 @@
 .todo__item {
   display: flex;
   margin-bottom: 10px;
+  padding-right: 40px;
   padding-bottom: 10px;
-  justify-content: space-between;
   border-bottom: 4px dotted var(--border-list);
+  background-image: url(../imgs/recycle-bin.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  cursor: pointer;
 }
 
 .todo__item:last-child {
