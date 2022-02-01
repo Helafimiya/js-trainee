@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Segoe", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--main-text);
+  text-decoration: none;
+
+  background-color: var(--back-text-title);
+
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+body *,
+*::after,
+*::before {
+  box-sizing: inherit;
+}

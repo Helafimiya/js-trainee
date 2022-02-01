@@ -5,19 +5,45 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style/body" />
+    <link rel="stylesheet" href="style/title.css" />
+    <link rel="stylesheet" href="style/todo.css" />
+    <link rel="stylesheet" href="style/color.css" />
     <title>ToDoList</title>
   </head>
   <body>
-    <main class="structure">
-      <h1 class="structure__title">Список овощей на суп</h1>
-      <div class="structure__list">
-        <label><input type="checkbox" />Морковь</label>
-        <label><input type="checkbox" />Лук</label>
-        <label><input type="checkbox" />Капуста</label>
-        <label><input type="checkbox" />Свекла</label>
-        <label><input type="checkbox" />Томат</label>
-      </div>
+    <main>
+      <h1 class="title">Список овощей на суп</h1>
+      <section class="todo">
+        <ul class="todo__list">
+          <li class="todo__item">
+            <label class="todo__name"
+              ><span>Морковь</span><input type="checkbox"
+            /></label>
+          </li>
+          <li class="todo__item">
+            <label class="todo__name"
+              ><span>Лук</span><input type="checkbox"
+            /></label>
+          </li>
+          <li class="todo__item">
+            <label class="todo__name"
+              ><span>Капуста</span><input type="checkbox"
+            /></label>
+          </li>
+          <li class="todo__item">
+            <label class="todo__name"
+              ><span>Свекла</span><input type="checkbox"
+            /></label>
+          </li>
+          <li class="todo__item">
+            <label class="todo__name"
+              ><span>Томат</span><input type="checkbox"
+            /></label>
+          </li>
+        </ul>
+      </section>
     </main>
   </body>
 </html>
