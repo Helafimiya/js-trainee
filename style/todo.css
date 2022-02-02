@@ -18,7 +18,6 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
-  cursor: pointer;
 }
 
 .todo__item:last-child {

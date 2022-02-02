@@ -4,11 +4,21 @@
 }
 
 .new-elem__stroke {
+  outline: none;
+  padding: 0;
   width: 50%;
+  height: 26px;
+  border: 1px solid var(--border-list);
 }
 
+.new-elem__stroke:hover {
+  border: 1px solid var(--back-title-border);
+  background-color: var(--input-hover);
+}
+
+.new-elem__stroke:focus,
 .new-elem__stroke:active {
-  border: 3px var(--back-title-border);
+  background-color: var(--back-text-title);
 }
 
 .new-elem__btn {
@@ -18,5 +28,13 @@
   border-radius: 5px;
   background: var(--back-title-border);
   color: var(--back-text-title);
-  cursor: pointer;
+}
+
+.new-elem__btn:hover {
+  background: var(--border-list);
+}
+
+.new-elem__btn:focus,
+.new-elem__btn:active {
+  background: var(--back-title-border);
 }
