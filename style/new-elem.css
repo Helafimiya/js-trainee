@@ -8,13 +8,12 @@
   padding: 0;
   width: 50%;
   height: 36px;
-  border: 1px solid var(--border-list);
-  transition: border 0.5s ease;
+  border: 2px solid var(--border-list);
+  transition: border-color, outline 0.5s ease;
 }
 
 .new-elem__input:hover {
   border-color: var(--back-title-border);
-  transition: outline 0.5s;
 }
 
 .new-elem__input:focus {
@@ -27,12 +26,11 @@
   border-radius: 5px;
   background-color: var(--back-title-border);
   color: var(--back-text-title);
-  transition: background 0.4s ease;
+  transition: background-color 0.4s ease;
 }
 
 .new-elem__btn:hover {
   background-color: var(--border-list);
-  transition: background-color 0.2s ease;
 }
 
 .new-elem__btn:active {
