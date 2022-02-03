@@ -3,31 +3,32 @@
   justify-content: space-evenly;
 }
 
-.new-elem__stroke {
-  outline: none;
+.new-elem__input {
   padding: 0;
   width: 50%;
   height: 26px;
   border: 1px solid var(--border-list);
+  transition-duration: 0.5s;
 }
 
-.new-elem__stroke:hover {
-  border: 1px solid var(--back-title-border);
+.new-elem__input:hover {
   background-color: var(--input-hover);
+  outline: 2px solid var(--back-title-border);
+  border-radius: 3px;
 }
 
-.new-elem__stroke:focus,
-.new-elem__stroke:active {
-  background-color: var(--back-text-title);
+.new-elem__input:focus {
+  outline: 2px solid var(--back-title-border);
+  border-radius: 3px;
 }
 
 .new-elem__btn {
   width: 100px;
-  appearance: none;
   border: 0;
   border-radius: 5px;
   background: var(--back-title-border);
   color: var(--back-text-title);
+  transition-duration: 0.8s;
 }
 
 .new-elem__btn:hover {

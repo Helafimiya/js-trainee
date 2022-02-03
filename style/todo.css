@@ -5,18 +5,18 @@
 
 .todo__list {
   padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
   list-style: none;
 }
 
 .todo__item {
   display: flex;
-  margin-bottom: 10px;
-  padding-right: 40px;
-  padding-bottom: 10px;
-  border-bottom: 4px dotted var(--border-list);
-  background-image: url(../imgs/recycle-bin.png);
+  padding: 10px;
+  border-bottom: 1px solid var(--border-list);
+  background-image: url(../imgs/letterx_83737.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 14px;
   background-position: right;
 }
 
@@ -26,6 +26,5 @@
 
 .todo__name {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
+  align-items: center;
 }
