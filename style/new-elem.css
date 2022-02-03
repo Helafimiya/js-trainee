@@ -8,18 +8,16 @@
   width: 50%;
   height: 26px;
   border: 1px solid var(--border-list);
-  transition-duration: 0.5s;
+  transition: border 0.5s ease;
 }
 
 .new-elem__input:hover {
-  background-color: var(--input-hover);
-  outline: 2px solid var(--back-title-border);
-  border-radius: 3px;
+  border: 1px solid var(--back-title-border);
+  transition: outline 1s;
 }
 
 .new-elem__input:focus {
   outline: 2px solid var(--back-title-border);
-  border-radius: 3px;
 }
 
 .new-elem__btn {
