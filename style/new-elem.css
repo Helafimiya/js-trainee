@@ -1,0 +1,38 @@
+.new-elem {
+  display: flex;
+  margin: 20px;
+  justify-content: space-evenly;
+}
+
+.new-elem__input {
+  padding: 0;
+  width: 50%;
+  height: 36px;
+  border: 2px solid var(--border-list);
+  transition: border-color, outline 0.5s ease;
+}
+
+.new-elem__input:hover {
+  border-color: var(--back-title-border);
+}
+
+.new-elem__input:focus {
+  outline: 2px solid var(--back-title-border);
+}
+
+.new-elem__btn {
+  width: 100px;
+  border: 0;
+  border-radius: 5px;
+  background-color: var(--back-title-border);
+  color: var(--back-text-title);
+  transition: background-color 0.4s ease;
+}
+
+.new-elem__btn:hover {
+  background-color: var(--border-list);
+}
+
+.new-elem__btn:active {
+  background-color: var(--back-title-border);
+}

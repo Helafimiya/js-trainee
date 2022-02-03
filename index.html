@@ -10,37 +10,77 @@
     <link rel="stylesheet" href="style/title.css" />
     <link rel="stylesheet" href="style/todo.css" />
     <link rel="stylesheet" href="style/color.css" />
+    <link rel="stylesheet" href="style/new-elem.css" />
     <title>ToDoList</title>
   </head>
   <body>
     <main>
       <h1 class="title">Список овощей на суп</h1>
+      <form class="new-elem">
+        <input
+          class="new-elem__input"
+          type="text"
+          aria-label="Добавить новую задачу"
+          placeholder="Напиши в меня что-нибудь"
+        />
+        <button class="new-elem__btn" type="submit">Добавить</button>
+      </form>
       <section class="todo">
         <ul class="todo__list">
           <li class="todo__item">
             <label class="todo__name"
-              ><span>Морковь</span><input type="checkbox"
-            /></label>
+              ><input type="checkbox" /><span>Морковь</span>
+            </label>
+            <button type="button" class="todo__delete-btn">
+              <svg class="todo__delete-icon" width="14" height="14">
+                <line x1="2" y1="2" x2="12" y2="12" stroke-linecap="round" />
+                <line x1="12" y1="2" x2="2" y2="12" stroke-linecap="round" />
+              </svg>
+            </button>
           </li>
           <li class="todo__item">
-            <label class="todo__name"
-              ><span>Лук</span><input type="checkbox"
-            /></label>
+            <label class="todo__name">
+              <input type="checkbox" /><span>Лук</span>
+            </label>
+            <button type="button" class="todo__delete-btn">
+              <svg class="todo__delete-icon" width="14" height="14">
+                <line x1="2" y1="2" x2="12" y2="12" stroke-linecap="round" />
+                <line x1="12" y1="2" x2="2" y2="12" stroke-linecap="round" />
+              </svg>
+            </button>
           </li>
           <li class="todo__item">
-            <label class="todo__name"
-              ><span>Капуста</span><input type="checkbox"
-            /></label>
+            <label class="todo__name">
+              <input type="checkbox" /><span>Капуста</span>
+            </label>
+            <button type="button" class="todo__delete-btn">
+              <svg class="todo__delete-icon" width="14" height="14">
+                <line x1="2" y1="2" x2="12" y2="12" stroke-linecap="round" />
+                <line x1="12" y1="2" x2="2" y2="12" stroke-linecap="round" />
+              </svg>
+            </button>
           </li>
           <li class="todo__item">
-            <label class="todo__name"
-              ><span>Свекла</span><input type="checkbox"
-            /></label>
+            <label class="todo__name">
+              <input type="checkbox" /><span>Свекла</span>
+            </label>
+            <button type="button" class="todo__delete-btn">
+              <svg class="todo__delete-icon" width="14" height="14">
+                <line x1="2" y1="2" x2="12" y2="12" stroke-linecap="round" />
+                <line x1="12" y1="2" x2="2" y2="12" stroke-linecap="round" />
+              </svg>
+            </button>
           </li>
           <li class="todo__item">
-            <label class="todo__name"
-              ><span>Томат</span><input type="checkbox"
-            /></label>
+            <label class="todo__name">
+              <input type="checkbox" /><span>Томат</span>
+            </label>
+            <button type="button" class="todo__delete-btn">
+              <svg class="todo__delete-icon" width="14" height="14">
+                <line x1="2" y1="2" x2="12" y2="12" stroke-linecap="round" />
+                <line x1="12" y1="2" x2="2" y2="12" stroke-linecap="round" />
+              </svg>
+            </button>
           </li>
         </ul>
       </section>
