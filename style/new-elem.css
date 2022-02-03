@@ -1,19 +1,20 @@
 .new-elem {
   display: flex;
+  margin: 20px;
   justify-content: space-evenly;
 }
 
 .new-elem__input {
   padding: 0;
   width: 50%;
-  height: 26px;
+  height: 36px;
   border: 1px solid var(--border-list);
   transition: border 0.5s ease;
 }
 
 .new-elem__input:hover {
-  border: 1px solid var(--back-title-border);
-  transition: outline 1s;
+  border-color: var(--back-title-border);
+  transition: outline 0.5s;
 }
 
 .new-elem__input:focus {
@@ -24,16 +25,16 @@
   width: 100px;
   border: 0;
   border-radius: 5px;
-  background: var(--back-title-border);
+  background-color: var(--back-title-border);
   color: var(--back-text-title);
-  transition-duration: 0.8s;
+  transition: background 0.4s ease;
 }
 
 .new-elem__btn:hover {
-  background: var(--border-list);
+  background-color: var(--border-list);
+  transition: background-color 0.2s ease;
 }
 
-.new-elem__btn:focus,
 .new-elem__btn:active {
-  background: var(--back-title-border);
+  background-color: var(--back-title-border);
 }

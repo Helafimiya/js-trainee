@@ -16,35 +16,6 @@
   <body>
     <main>
       <h1 class="title">Список овощей на суп</h1>
-      <section class="todo">
-        <ul class="todo__list">
-          <li class="todo__item">
-            <label class="todo__name"
-              ><input type="checkbox" /><span>Морковь</span></label
-            >
-          </li>
-          <li class="todo__item">
-            <label class="todo__name"
-              ><input type="checkbox" /><span>Лук</span></label
-            >
-          </li>
-          <li class="todo__item">
-            <label class="todo__name"
-              ><input type="checkbox" /><span>Капуста</span></label
-            >
-          </li>
-          <li class="todo__item">
-            <label class="todo__name"
-              ><input type="checkbox" /><span>Свекла</span></label
-            >
-          </li>
-          <li class="todo__item">
-            <label class="todo__name"
-              ><input type="checkbox" /><span>Томат</span></label
-            >
-          </li>
-        </ul>
-      </section>
       <form class="new-elem">
         <input
           class="new-elem__input"
@@ -52,8 +23,133 @@
           aria-label="Добавить новую задачу"
           placeholder="Напиши в меня что-нибудь"
         />
-        <button class="new-elem__btn" type="button">Добавить</button>
+        <button class="new-elem__btn" type="submit">Добавить</button>
       </form>
+      <section class="todo">
+        <ul class="todo__list">
+          <li class="todo__item">
+            <label class="todo__name"
+              ><input type="checkbox" /><span>Морковь</span></label
+            >
+            <svg class="todo__delete-icon" width="14" height="14">
+              <line
+                x1="2"
+                y1="2"
+                x2="12"
+                y2="12"
+                stroke="var(--back-title-border)"
+                stroke-width="3px"
+                stroke-linecap="round"
+              />
+              <line
+                x1="12"
+                y1="2"
+                x2="2"
+                y2="12"
+                stroke="var(--back-title-border)"
+                stroke-width="3px"
+                stroke-linecap="round"
+              />
+            </svg>
+          </li>
+          <li class="todo__item">
+            <label class="todo__name"
+              ><input type="checkbox" /><span>Лук</span></label
+            ><svg class="todo__delete-icon" width="14" height="14">
+              <line
+                x1="2"
+                y1="2"
+                x2="12"
+                y2="12"
+                stroke="var(--back-title-border)"
+                stroke-width="3px"
+                stroke-linecap="round"
+              />
+              <line
+                x1="12"
+                y1="2"
+                x2="2"
+                y2="12"
+                stroke="var(--back-title-border)"
+                stroke-width="3px"
+                stroke-linecap="round"
+              />
+            </svg>
+          </li>
+          <li class="todo__item">
+            <label class="todo__name"
+              ><input type="checkbox" /><span>Капуста</span></label
+            ><svg class="todo__delete-icon" width="14" height="14">
+              <line
+                x1="2"
+                y1="2"
+                x2="12"
+                y2="12"
+                stroke="var(--back-title-border)"
+                stroke-width="3px"
+                stroke-linecap="round"
+              />
+              <line
+                x1="12"
+                y1="2"
+                x2="2"
+                y2="12"
+                stroke="var(--back-title-border)"
+                stroke-width="3px"
+                stroke-linecap="round"
+              />
+            </svg>
+          </li>
+          <li class="todo__item">
+            <label class="todo__name"
+              ><input type="checkbox" /><span>Свекла</span></label
+            ><svg class="todo__delete-icon" width="14" height="14">
+              <line
+                x1="2"
+                y1="2"
+                x2="12"
+                y2="12"
+                stroke="var(--back-title-border)"
+                stroke-width="3px"
+                stroke-linecap="round"
+              />
+              <line
+                x1="12"
+                y1="2"
+                x2="2"
+                y2="12"
+                stroke="var(--back-title-border)"
+                stroke-width="3px"
+                stroke-linecap="round"
+              />
+            </svg>
+          </li>
+          <li class="todo__item">
+            <label class="todo__name"
+              ><input type="checkbox" /><span>Томат</span></label
+            ><svg class="todo__delete-icon" width="14" height="14">
+              <line
+                x1="2"
+                y1="2"
+                x2="12"
+                y2="12"
+                stroke="var(--back-title-border)"
+                stroke-width="3px"
+                stroke-linecap="round"
+              />
+              <line
+                x1="12"
+                y1="2"
+                x2="2"
+                y2="12"
+                stroke="var(--back-title-border)"
+                stroke-width="3px"
+                stroke-linecap="round"
+              />
+            </svg>
+          </li>
+        </ul>
+      </section>
     </main>
   </body>
 </html>
