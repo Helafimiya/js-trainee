@@ -9,4 +9,6 @@ form.addEventListener("submit", function (e) {
 
   createElementFromText(input.value);
   saveInputValue(input.value);
+
+  input.value = "";
 });
