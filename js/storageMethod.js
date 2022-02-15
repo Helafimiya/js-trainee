@@ -1,12 +1,19 @@
 // ключ для хранилища
 const taskKey = "task";
 
+//сохраняем в сторадж данные
+function setItemInStorage(dataList) {
+  localStorage.setItem(taskKey, JSON.stringify(dataList));
+}
+
 // сохраняет данные в локалсторадж
 export function saveInputValue(value) {
   const oldData = getDataListFromStorage();
 
   oldData.push(value);
-  localStorage.setItem(taskKey, JSON.stringify(oldData));
+
+  setItemInStorage(oldData);
+  return oldData.length - 1;
 }
 
 // получаем данные из localStorage
@@ -24,4 +31,11 @@ export function getDataListFromStorage() {
   } else {
     return [];
   }
+}
+
+// удаление ноды из localStorage и запись в него нового массива
+export function deleteNodeFromLocalStorage(index) {
+  const oldData = getDataListFromStorage();
+  oldData.splice(index, 1);
+  setItemInStorage(oldData);
 }
