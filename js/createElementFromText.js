@@ -22,15 +22,14 @@ function addDeleteListner(node, index) {
 }
 
 // вставляет элемент в список дома
-function createElement(node, index) {
+function createElement(node) {
   const toDoList = document.querySelector(".todo__list");
-  addDeleteListner(node, index);
-
   toDoList.append(node);
 }
 
 // создает элемент из текста
 export function createElementFromText(text, index) {
   const listItemNode = getListItemNode(text);
+  addDeleteListner(listItemNode, index);
   createElement(listItemNode, index);
 }
