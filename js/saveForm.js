@@ -1,5 +1,5 @@
 import { saveInputValue } from "./storageMethod.js";
-import { createElementFromText } from "./createElementFromText.js";
+import { createElementFromObj } from "./createElementFromText.js";
 
 // сохранение формы
 const form = document.querySelector(".new-elem");
@@ -8,7 +8,7 @@ form.addEventListener("submit", function (e) {
   e.preventDefault(); // останавливает передачу на сервер
 
   const index = saveInputValue(input.value);
-  createElementFromText(input.value, index);
+  createElementFromObj(input.value, index);
 
   input.value = "";
 });
