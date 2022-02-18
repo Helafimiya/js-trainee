@@ -32,12 +32,12 @@
   margin-right: 10px;
 }
 
-.todo__checkBox:checked ~ span {
+.todo__checkBox:checked ~ .todo__text {
   text-decoration: line-through;
   text-decoration-color: var(--back-title-border);
 }
 
-span {
+.todo__text {
   font-size: 18px;
 }
 
