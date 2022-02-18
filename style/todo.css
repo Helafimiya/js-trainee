@@ -27,6 +27,20 @@
   align-items: center;
 }
 
+.todo__checkBox {
+  margin: 0;
+  margin-right: 10px;
+}
+
+.todo__checkBox:checked ~ .todo__text {
+  text-decoration: line-through;
+  text-decoration-color: var(--back-title-border);
+}
+
+.todo__text {
+  font-size: 18px;
+}
+
 .todo__delete-btn {
   border: none;
   background-color: transparent;
