@@ -9,13 +9,9 @@ function setItemInStorage(dataList) {
 }
 
 // сохраняет данные в локалсторадж (create)
-export function saveInputValue(text) {
+export function saveInputValue(objWithTextAndCheckbox) {
   const oldData = getDataListFromStorage();
-  //переменная с объектом, в котором будет храниться текст и значение чекбокса
-  const objWithTextAndCheckbox = {
-    task: text,
-    checked: false,
-  };
+
   oldData.push(objWithTextAndCheckbox); // добавляем в массив объекты
 
   setItemInStorage(oldData);
