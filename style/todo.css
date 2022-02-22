@@ -15,7 +15,7 @@
 }
 
 @media (max-width: 550px) {
-  .todo__section_1 {
+  .todo__section_border {
     border-bottom: 1px solid var(--back-title-border);
   }
 }
