@@ -25,7 +25,7 @@ function addDeleteListner(node, index) {
 }
 
 // рендер в разные списки, в зависимости от состояния чекбокса
-export function appendListItemNode(listItemNode, isChecked) {
+function appendListItemNode(listItemNode, isChecked) {
   const toDoListUndone = document.querySelector("#todo-list-undone");
   const todoListDone = document.querySelector("#todo-list-done");
 
@@ -58,8 +58,7 @@ function addCheckListner(node, index) {
 // создает элемент из объекта
 export function createElementFromObj(obj, index) {
   const listItemNode = getListItemNode(obj);
-  const isChecked = obj.checked;
   addDeleteListner(listItemNode, index);
   addCheckListner(listItemNode, index);
-  appendListItemNode(listItemNode, isChecked);
+  appendListItemNode(listItemNode, obj.checked);
 }
