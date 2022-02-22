@@ -24,25 +24,32 @@
         />
         <button class="new-elem__btn" type="submit">Добавить</button>
       </form>
-      <section class="todo">
-        <ul class="todo__list">
-          <template>
-            <li class="todo__item">
-              <label class="todo__name">
-                <input class="todo__checkBox" type="checkbox" /><span
-                  class="todo__text"
-                ></span>
-              </label>
-              <button type="button" class="todo__delete-btn">
-                <svg class="todo__delete-icon" width="14" height="14">
-                  <line x1="2" y1="2" x2="12" y2="12" stroke-linecap="round" />
-                  <line x1="12" y1="2" x2="2" y2="12" stroke-linecap="round" />
-                </svg>
-              </button>
-            </li>
-          </template>
-        </ul>
-      </section>
+      <div class="todo">
+        <section class="todo__section">
+          <h2 class="todo__title">Active</h2>
+          <ul id="todo-list-undone" class="todo__list"></ul>
+        </section>
+        <section class="todo__section">
+          <h2 class="todo__title">Done</h2>
+          <ul id="todo-list-done" class="todo__list"></ul>
+        </section>
+      </div>
+
+      <template>
+        <li class="todo__item">
+          <label class="todo__name">
+            <input class="todo__checkBox" type="checkbox" /><span
+              class="todo__text"
+            ></span>
+          </label>
+          <button type="button" class="todo__delete-btn">
+            <svg class="todo__delete-icon" width="14" height="14">
+              <line x1="2" y1="2" x2="12" y2="12" stroke-linecap="round" />
+              <line x1="12" y1="2" x2="2" y2="12" stroke-linecap="round" />
+            </svg>
+          </button>
+        </li>
+      </template>
     </main>
     <script type="module" src="/js/saveForm.js"></script>
     <script type="module" src="/js/renderOldData.js"></script>

@@ -24,6 +24,24 @@ function addDeleteListner(node, index) {
   });
 }
 
+// рендер в разные списки, в зависимости от состояния чекбокса
+export function appendListItemNode(listItemNode, isChecked) {
+  const toDoListUndone = document.querySelector("#todo-list-undone");
+  const todoListDone = document.querySelector("#todo-list-done");
+
+  if (isChecked === true) {
+    todoListDone.append(listItemNode);
+  } else {
+    toDoListUndone.append(listItemNode);
+  }
+}
+
+// переносит ноду в другой список при клике
+function moveNodeInAnotherList(listItemNode, isChecked) {
+  listItemNode.remove();
+  appendListItemNode(listItemNode, isChecked);
+}
+
 // добавляет обработчик событий на чексбокс
 function addCheckListner(node, index) {
   const checkBox = node.querySelector(".todo__checkBox");
@@ -31,20 +49,17 @@ function addCheckListner(node, index) {
   checkBox.addEventListener("change", function (event) {
     const isChecked = event.currentTarget.checked; // читает значение чекбокса
     const text = node.querySelector("span").textContent;
-    updateItemInStorage(index, text, isChecked);
-  });
-}
 
-// вставляет элемент в список дома
-function createElement(node) {
-  const toDoList = document.querySelector(".todo__list");
-  toDoList.append(node);
+    updateItemInStorage(index, text, isChecked);
+    moveNodeInAnotherList(node, isChecked);
+  });
 }
 
 // создает элемент из объекта
 export function createElementFromObj(obj, index) {
   const listItemNode = getListItemNode(obj);
+  const isChecked = obj.checked;
   addDeleteListner(listItemNode, index);
   addCheckListner(listItemNode, index);
-  createElement(listItemNode, index);
+  appendListItemNode(listItemNode, isChecked);
 }

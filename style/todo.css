@@ -1,6 +1,25 @@
-.todo {
-  padding-left: 20px;
-  padding-right: 20px;
+@media (min-width: 550px) {
+  .todo {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.todo__section {
+  width: 300px;
+}
+
+@media (max-width: 550px) {
+  .todo {
+    border-bottom: 1px solid var(--back-title-border);
+  }
+}
+
+.todo__title {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+  color: var(--section-title);
 }
 
 .todo__list {
@@ -39,6 +58,7 @@
 
 .todo__text {
   font-size: 18px;
+  word-wrap: break-word;
 }
 
 .todo__delete-btn {
