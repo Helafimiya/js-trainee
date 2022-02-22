@@ -1,3 +1,8 @@
+.todo {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 @media (min-width: 550px) {
   .todo {
     display: flex;
@@ -10,7 +15,7 @@
 }
 
 @media (max-width: 550px) {
-  .todo {
+  .todo__section_1 {
     border-bottom: 1px solid var(--back-title-border);
   }
 }
@@ -39,6 +44,7 @@
 
 .todo__item:last-child {
   margin-bottom: 0;
+  border: none;
 }
 
 .todo__name {
