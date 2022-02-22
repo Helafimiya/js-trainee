@@ -1,14 +1,20 @@
 import { saveInputValue } from "./storageMethod.js";
-import { createElementFromObj } from "./createElementFromText.js";
+import { createElementFromObj } from "./createElementFromObj.js";
 
 // сохранение формы
 const form = document.querySelector(".new-elem");
 form.addEventListener("submit", function (e) {
-  const input = document.querySelector(".new-elem__input");
   e.preventDefault(); // останавливает передачу на сервер
+  const input = document.querySelector(".new-elem__input");
 
-  const index = saveInputValue(input.value);
-  createElementFromObj(input.value, index);
+  //переменная с объектом, в котором будет храниться текст и значение чекбокса
+  const objWithTextAndCheckbox = {
+    task: input.value,
+    checked: false,
+  };
+
+  const index = saveInputValue(objWithTextAndCheckbox);
+  createElementFromObj(objWithTextAndCheckbox, index);
 
   input.value = "";
 });
