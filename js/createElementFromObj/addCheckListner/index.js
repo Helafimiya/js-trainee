@@ -1,6 +1,11 @@
 import { updateItemInStorage } from "../../storageMethod/index.js";
 
-// рендер в разные списки, в зависимости от состояния чекбокса
+/**
+ * рендер в разные списки, в зависимости от состояния чекбокса
+ * @param {object} listItemNode
+ * @param {boolean} isChecked
+ * @returns {void}
+ */
 function appendListItemNode(listItemNode, isChecked) {
   const toDoListUndone = document.querySelector("#todo-list-undone");
   const todoListDone = document.querySelector("#todo-list-done");
@@ -12,13 +17,23 @@ function appendListItemNode(listItemNode, isChecked) {
   }
 }
 
-// переносит ноду в другой список при клике
+/**
+ * переносит ноду в другой список при клике
+ * @param {object} listItemNode
+ * @param {boolean} isChecked
+ * @returns {void}
+ */
 function moveNodeInAnotherList(listItemNode, isChecked) {
   listItemNode.remove();
   appendListItemNode(listItemNode, isChecked);
 }
 
-// добавляет обработчик событий на чексбокс
+/**
+ * добавляет обработчик событий на чексбокс
+ * @param {object} node
+ * @param {number} index
+ * @returns {void}
+ */
 export function addCheckListner(node, index) {
   const checkBox = node.querySelector(".todo__checkBox");
 
