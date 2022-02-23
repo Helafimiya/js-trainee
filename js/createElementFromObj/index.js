@@ -4,7 +4,7 @@ import { addCheckListner } from "./addCheckListner/index.js";
 /**
  * получаем ноду с вставленым текстом
  * @param {object} obj
- * @returns {void}
+ * @returns {object}
  */
 function getListItemNode(obj) {
   const template = document.querySelector("template");
