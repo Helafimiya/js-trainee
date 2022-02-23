@@ -6,7 +6,7 @@ import { updateItemInStorage } from "../../storageMethod/index.js";
  * @param {boolean} isChecked
  * @returns {void}
  */
-function appendListItemNode(listItemNode, isChecked) {
+export function appendListItemNode(listItemNode, isChecked) {
   const toDoListUndone = document.querySelector("#todo-list-undone");
   const todoListDone = document.querySelector("#todo-list-done");
 
