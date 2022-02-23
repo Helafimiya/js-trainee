@@ -1,5 +1,5 @@
-import { getDataListFromStorage } from "./storageMethod.js";
-import { createElementFromObj } from "./createElementFromObj.js";
+import { getDataListFromStorage } from "../storageMethod/index.js";
+import { createElementFromObj } from "../createElementFromObj/index.js";
 
 // для каждого элемента массива вызывает createElement
 function renderList(dataList) {

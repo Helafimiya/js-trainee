@@ -1,5 +1,5 @@
-import { saveInputValue } from "./storageMethod.js";
-import { createElementFromObj } from "./createElementFromObj.js";
+import { saveInputValue } from "../storageMethod/index.js";
+import { createElementFromObj } from "../createElementFromObj/index.js";
 
 // сохранение формы
 const form = document.querySelector(".new-elem");
