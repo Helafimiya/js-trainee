@@ -1,7 +1,9 @@
 import { saveInputValue } from "../storageMethod/index.js";
 import { createElementFromObj } from "../createElementFromObj/index.js";
 
-// сохранение формы
+/**
+ * сохранение формы
+ */
 const form = document.querySelector(".new-elem");
 form.addEventListener("submit", function (e) {
   e.preventDefault(); // останавливает передачу на сервер

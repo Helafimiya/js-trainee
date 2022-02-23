@@ -1,7 +1,11 @@
 import { deleteNodeFromLocalStorage } from "../storageMethod/index.js";
 import { addCheckListner } from "./addCheckListner/index.js";
 
-// получаем ноду с вставленым текстом
+/**
+ * получаем ноду с вставленым текстом
+ * @param {object} obj
+ * @returns {void}
+ */
 function getListItemNode(obj) {
   const template = document.querySelector("template");
   const cloneTemplate = template.content
@@ -12,7 +16,12 @@ function getListItemNode(obj) {
   return cloneTemplate;
 }
 
-// Добавляет в ноду удаление со страницы и удаление соответсвующего индексу элемента из storage
+/**
+ * Добавляет в ноду удаление со страницы и удаление соответсвующего индексу элемента из storage
+ * @param {object} node
+ * @param {number} index
+ * @returns {void}
+ */
 function addDeleteListner(node, index) {
   const btnDeleteNode = node.querySelector(".todo__delete-btn");
 
@@ -22,7 +31,12 @@ function addDeleteListner(node, index) {
   });
 }
 
-// создает элемент из объекта
+/**
+ * создает элемент из объекта
+ * @param {object} obj
+ * @param {number} index
+ * @returns {void}
+ */
 export function createElementFromObj(obj, index) {
   const listItemNode = getListItemNode(obj);
   addDeleteListner(listItemNode, index);
