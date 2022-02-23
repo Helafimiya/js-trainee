@@ -18,5 +18,8 @@
   "homepage": "https://github.com/Helafimiya/js-trainee#readme",
   "dependencies": {
     "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0"
   }
 }

@@ -1,5 +1,8 @@
 import { deleteNodeFromLocalStorage } from "../storageMethod/index.js";
-import { addCheckListner } from "./addCheckListner/index.js";
+import {
+  addCheckListner,
+  appendListItemNode,
+} from "./addCheckListner/index.js";
 
 /**
  * получаем ноду с вставленым текстом
